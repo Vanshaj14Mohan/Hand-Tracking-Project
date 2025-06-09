@@ -22,8 +22,10 @@ while True:
             # mpDraw.draw_landmarks(img, handLms) normal just points no lines on hands
             for id, lm, in enumerate(handLms.landmark):
                 # h, w, c = img.shape
-                print(id, lm)
+                # print(id, lm)
                 h, w, c = img.shape
+                cx, cy = int(lm.x*w), int(lm.y*h)
+                print(id, cx, cy)
             mpDraw.draw_landmarks(img, handLms, mpHands.HAND_CONNECTIONS) #for lining the hands
     
     cTime = time.time() #will give us current time
