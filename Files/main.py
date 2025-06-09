@@ -8,6 +8,9 @@ mpHands = mp.solutions.hands
 hands = mpHands.Hands()
 mpDraw = mp.solutions.drawing_utils
 
+pTime = 0
+cTime = 0
+
 while True:
     success, img = cap.read()
     imgRGB = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
@@ -18,6 +21,13 @@ while True:
         for handLms in results.multi_hand_landmarks:
             # mpDraw.draw_landmarks(img, handLms) normal just points no lines on hands
             mpDraw.draw_landmarks(img, handLms, mpHands.HAND_CONNECTIONS) #for lining the hands
+    
+    cTime = time.time() #will give us current time
+    fps = 1/(cTime-pTime)
+    pTime = cTime
+
+    # cv2.putText(img, str(int(fps)), (10,70), cv2.FONT_HERSHEY_SIMPLEX, 3, (255,0,255), 3)
+    cv2.putText(img, str(int(fps)), (10,70), cv2.FONT_HERSHEY_PLAIN, 3, (255,0,255), 3)
 
     cv2.imshow("Image", img)
     cv2.waitKey(1)
