@@ -4,3 +4,4 @@
 # But don't ignore these files
 !.gitignore
 !main.py
+!readme.md
