@@ -2,14 +2,16 @@ import cv2
 import mediapipe as mp
 import time
 
+# Initialize webcam feed (0 for default camera)
 cap = cv2.VideoCapture(0)
 
+# Initialize MediaPipe Hands module
 mpHands = mp.solutions.hands
-hands = mpHands.Hands()
-mpDraw = mp.solutions.drawing_utils
+hands = mpHands.Hands() # Default parameters for hand detection
+mpDraw = mp.solutions.drawing_utils # Utility for drawing hand landmarks
 
-pTime = 0
-cTime = 0
+pTime = 0 # Previous time
+cTime = 0 # Current time
 
 while True:
     success, img = cap.read()
