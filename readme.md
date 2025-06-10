@@ -102,6 +102,7 @@ Make sure your webcam is connected and accessible.
 ---
 
 👤 Author
+
 Made with ❤️ by Vanshaj P Mohan
 
 ---
