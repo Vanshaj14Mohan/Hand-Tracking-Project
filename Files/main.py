@@ -27,7 +27,8 @@ while True:
                 cx, cy = int(lm.x*w), int(lm.y*h)
                 print(id, cx, cy)
                 if id == 0:
-                    cv2.circle(img, (cx, cy), 5, (255, 0,255, cv2.FILLED))
+                # if id == 4:
+                    cv2.circle(img, (cx, cy), 15, (255, 0, 255), cv2.FILLED)
             mpDraw.draw_landmarks(img, handLms, mpHands.HAND_CONNECTIONS) #for lining the hands
     
     cTime = time.time() #will give us current time
