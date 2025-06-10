@@ -49,4 +49,5 @@ while True:
     # cv2.putText(img, str(int(fps)), (10,70), cv2.FONT_HERSHEY_DUPLEX, 3, (255,0,255), 3)
 
     cv2.imshow("Image", img) #Show the frame in a window
+    
     cv2.waitKey(1) #Wait for 1ms and continue to next frame
