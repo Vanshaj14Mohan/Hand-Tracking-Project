@@ -103,6 +103,6 @@ Make sure your webcam is connected and accessible.
 
 👤 Author
 
-Made with ❤️ by Vanshaj P Mohan
+Made with ❤️ by Vanshaj P Mohan a Data Science Enthusiast
 
 ---
