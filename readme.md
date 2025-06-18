@@ -29,7 +29,6 @@ hand-tracking-project/
 │
 ├── main.py              # Main file to run the hand tracking
 ├── README.md            # Project overview and details
-└── .gitignore           # Git ignore file (if using Git)
 ```
 
 ---
