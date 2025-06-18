@@ -102,6 +102,6 @@ Make sure your webcam is connected and accessible.
 
 👤 Author
 
-Made with ❤️ by Vanshaj P Mohan a Data Science Enthusiast. Feel free to reach out for collaborations or feedback!
+Made with ❤️ by Vanshaj P Mohan a Data Science Enthusiast. Feel free to reach out for any collaborations or feedback!
 
 ---
